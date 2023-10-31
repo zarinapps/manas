@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="assets/css/aos.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        };
+      </script>
 </head>
 <body>
 
